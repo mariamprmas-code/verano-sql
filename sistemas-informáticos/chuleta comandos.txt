@@ -1,0 +1,19 @@
+Chuleta de comandos :
+1. ip a (red y conectividad
+
+2. df -h (almacenamiento y software, enfocado en el espacio, desde el punto de vista lógico)
+3. lsblk (almacenamiento enfocado en la estructura y el hardware osea desde el punto de vista físico/virtual que muestra el mapa de los discos -sus piezas y particiones-)
+4. dpkg --get-selections (gestión de paquetes, software)
+5. nano archivo.txt (para editar textos)
+6. top o htop (ver procesos y consumo de recursos en tiempo real)
+7. free -h (ver el estado de la memoria RAM)
+8. systemctl status <servicio> (comprobar el estado de un servicio) 
+--- GESTIÓN DE USUARIOS Y GRUPOS ---
+- adduser <usuario>: Crear un nuevo usuario en el sistema.
+- passwd <usuario>: Cambiar o establecer la contraseña de un usuario.
+- cat /etc/passwd: Ver la lista de usuarios registrados en el sistema.
+
+--- REDES Y CONECTIVIDAD ---
+- ip a: Mostrar las interfaces de red y sus direcciones IP.
+- ping <ip/dominio>: Comprobar la conexión de red con otro equipo o servidor.
+- ss -tuln: Ver los puertos de red que están abiertos y escuchando.
