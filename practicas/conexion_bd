@@ -1,0 +1,23 @@
+<?php
+// Datos de conexión a MySQL en XAMPP
+$servidor = "localhost";
+$usuario = "root";
+$password = "";
+$base_datos = "instituto";
+// Crear la conexión usando PDO
+try {
+    $conexion = new PDO("mysql:host=$servidor;dbname=$base_datos;charset=utf8", $usuario, $password);
+    echo "<h2>¡Conexion establecida con éxito a la base de datos!</h2>";
+    // Consultar las asignaturas para mostrarlas
+    $sql = "SELECT * FROM asignaturas";
+    $resultado = $conexion->query($sql);
+echo "<ul>";
+foreach ($resultado as $fila) {
+    echo "<li><strong>" . $fila['nombre'] . "</strong> - Profesor/a: " . $fila['profesor'] .  " (" . $fila['horas'] . " horas)</li>";
+    }
+    echo "</ul>";
+    }
+ catch (PDOException $e) {
+    echo "Error en la conexion: " . $e->getMessage();
+}
+?>
