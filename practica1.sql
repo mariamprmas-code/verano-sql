@@ -37,4 +37,20 @@ SELECT * FROM asignaturas WHERE horas > 100;
 
 SELECT nombre, profesor FROM asignaturas WHERE horas > 100;
 
+-- 4. Consulta ordenada de mayor a menor numero de horas
+
+SELECT * FROM asignaturas ORDER BY horas DESC;
+
+-- 5. Consulta con doble condición (mas de 100 horas y de un profesor concreto
+
+SELECT * FROM asignaturas where horas > 100 AND profesor = 'Rafa';
+
+-- 6. Modificar un dato existente (actualizar el aula de una asignatura)
+
+UPDATE asignaturas SET aula = 'Lab 2' WHERE nombre = 'Bases de Datos';
+
+-- Comprobamos que el cambio se ha guardado bien
+
+SELECT * FROM asignaturas;
+
 
