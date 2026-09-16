@@ -17,3 +17,34 @@ Chuleta de comandos :
 - ip a: Mostrar las interfaces de red y sus direcciones IP.
 - ping <ip/dominio>: Comprobar la conexión de red con otro equipo o servidor.
 - ss -tuln: Ver los puertos de red que están abiertos y escuchando.
+
+NAVEGACIÓN Y GESTIÓN DE ARCHIVOS
+- pwd --> muestra la ruta de la carpeta actual (print working directory
+ls --> Lista de todos los archivos del directorio
+ls-la --> Lista de todos los archivos (incluyendo ocultos) con detalles de permisos y tamaños
+cd<carpeta> --> Entra en una carpeta
+mkdir<nombre> --> Crea una carpeta nueva (make directory)
+rm<archivo> --> Borra un archivo
+
+GESTIÓN DE USUARIOS Y PERMISOS
+- sudo adduser<usuario> --> Crea un usuario nuevo en el sistema
+- sudo passwd<usuario> --> Cambia la contraseña de un usuario
+- cat/etc/passwd --> Muestra la lista de usuarios registrados en el sistema
+- chmod<permisos><archivos> --> Cambia el propietario y grupo de un archivo
+
+REDES Y CONECTIVIDAD
+- ip a --> Muestra las interfaces de red del equipo y sus direcciones IP
+ping<ip_o_dominio> --> Comprueba la conectividad con otra máquina o servidor
+- ss-tuln --> muestra los puertos que están abiertos y escuchando en el equipo
+
+GESTIÓN DE PAQUETES Y SOFTWARE
+- sudo apt update --> Actualiza la lista de paquetes disponibles en los repositorios
+- sudo apt upgrade --> Actualiza todo el software instalado en el sistema
+sudo apt install<paquete> --> Instala un programa nuevo (ej. sudo apt install apache2)
+- sudo apt remove<paquete> --> Desinstala un programa
+
+PROCESOS Y SERVICIOS
+- top o htop --> Muestra los procesos y el consumo de recursos en tiempo real
+- free-h --> Muestra el estado y consumo de la memoria RAM
+- sudo systemctl status<servicio> --> Comprueba si un servicio (como apache, ssh...) está activo
+sudo systemctl start<servicio> --> Configura un servicio para que arranque automáticamente al encender el sistema
